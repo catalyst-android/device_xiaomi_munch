@@ -12,7 +12,7 @@ DEVICE_PATH := device/xiaomi/munch
 BUILD_BROKEN_DUP_RULES := true
 
 # Display
-TARGET_SCREEN_DENSITY := 440
+TARGET_SCREEN_DENSITY := 480
 
 # Kernel
 TARGET_KERNEL_CONFIG := munch_defconfig
