@@ -1,0 +1,2 @@
+# Catalyst OTA
+ro.catalyst.updater.uri=https://raw.githubusercontent.com/catalyst-android/OTA/13/updater/munch.json
