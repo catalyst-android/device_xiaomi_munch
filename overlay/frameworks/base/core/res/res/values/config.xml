@@ -516,14 +516,18 @@
          For example, no higher refresh rate if
          display brightness <= disp0 && ambient brightness <= amb0
          || display brightness <= disp1 && ambient brightness <= amb1
+
+         Note: For munch, we actually use these to force 120hz on lower brightness
+         rather than disabling high refresh rate when brightness is low since
+         no one wants to use lower refresh rate.
     -->
     <integer-array name="config_brightnessThresholdsOfPeakRefreshRate">
-        <item>10</item> <!-- 33% UI brightness -->
-        <item>14</item> <!-- 40% UI brightness -->
+        <item>1</item> <!-- 0% brightness slider -->
+        <item>12</item> <!-- 36% brightness slider -->
     </integer-array>
     <integer-array name="config_ambientThresholdsOfPeakRefreshRate">
-        <item>-1</item>
-        <item>20</item>
+        <item>14</item> <!-- Low light room situation -->
+        <item>2</item>  <!-- Very dark room situation -->
     </integer-array>
 
     <!-- Default refresh rate in the zone defined by brightness and ambient thresholds.
