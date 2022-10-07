@@ -45,4 +45,7 @@
 
     <integer name="config_aodMaxRefreshRate">60</integer>
 
+    <!-- Burn in protection -->
+    <bool name="config_statusBarBurnInProtection">true</bool>
+
 </resources>
